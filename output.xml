@@ -1,0 +1,626 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.2.2 (Python 3.11.7 on win32)" generated="2025-04-11T04:19:39.859907" rpa="false" schemaversion="5">
+<suite id="s1" name="Tc6" source="C:\Users\tanis\PycharmProjects\RobotFrameworkT\tc6.robot">
+<test id="s1-t1" name="TC_006_EndToEndTrademarkFlow" line="15">
+<kw name="Open Undetected Browser" owner="UndetectedBrowser">
+<msg time="2025-04-11T04:19:48.529778" level="INFO">patching driver executable C:\Users\tanis\appdata\roaming\undetected_chromedriver\undetected_chromedriver.exe</msg>
+<msg time="2025-04-11T04:19:53.149261" level="INFO">🚀 Launching undetected browser...
+🌐 Browser navigated to: https://www.trademarkia.com/</msg>
+<arg>${url_home}</arg>
+<status status="PASS" start="2025-04-11T04:19:40.656634" elapsed="12.492627"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2025-04-11T04:19:53.152863" elapsed="0.182262"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-11T04:19:54.337591" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-11T04:19:53.336126" elapsed="1.002716"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//button[contains(text(), 'Apply for Trademark')]</arg>
+<arg>10s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-11T04:19:54.339510" elapsed="0.032553"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-11T04:19:54.372063" level="INFO">Clicking element 'xpath=//button[contains(text(), 'Apply for Trademark')]'.</msg>
+<arg>xpath=//button[contains(text(), 'Apply for Trademark')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-11T04:19:54.372063" elapsed="0.103098"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-11T04:19:57.476429" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-11T04:19:54.475161" elapsed="3.002292"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-11T04:19:57.480123" level="INFO">Clicking element 'xpath=//button[contains(text(), 'Accept')]'.</msg>
+<arg>xpath=//button[contains(text(), 'Accept')]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-11T04:19:57.480123" elapsed="0.061201"/>
+</kw>
+<arg>Click Element</arg>
+<arg>xpath=//button[contains(text(), 'Accept')]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2025-04-11T04:19:57.479124" elapsed="0.062200"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-11T04:19:58.541928" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-11T04:19:57.541324" elapsed="1.000604"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2025-04-11T04:19:58.542931" level="INFO">Selecting checkbox 'xpath=//input[@name='is_name_protected']'.</msg>
+<arg>xpath=//input[@name='is_name_protected']</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-11T04:19:58.541928" elapsed="0.042312"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2025-04-11T04:19:58.584240" level="INFO">Selecting checkbox 'xpath=//input[@name='is_logo_protected']'.</msg>
+<arg>xpath=//input[@name='is_logo_protected']</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-11T04:19:58.584240" elapsed="0.187776"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2025-04-11T04:19:58.772016" level="INFO">Selecting checkbox 'xpath=//input[@name='is_slogan_protected']'.</msg>
+<arg>xpath=//input[@name='is_slogan_protected']</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-11T04:19:58.772016" elapsed="0.289000"/>
+</kw>
+<kw name="Select Checkbox" owner="SeleniumLibrary">
+<msg time="2025-04-11T04:19:59.061016" level="INFO">Selecting checkbox 'xpath=//input[@name='is_sound_protected']'.</msg>
+<arg>xpath=//input[@name='is_sound_protected']</arg>
+<doc>Selects the checkbox identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-11T04:19:59.061016" elapsed="0.214140"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath=//input[@name='mark_name']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-04-11T04:19:59.275156" elapsed="0.317470"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-11T04:19:59.592626" level="INFO">Typing text 'MyTestBrand' into text field 'xpath=//input[@name='mark_name']'.</msg>
+<arg>xpath=//input[@name='mark_name']</arg>
+<arg>${brand_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-11T04:19:59.592626" elapsed="0.172603"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-11T04:20:00.265514" level="INFO">Slept 500 milliseconds.</msg>
+<arg>0.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-11T04:19:59.765229" elapsed="0.500285"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath=//input[@name='slogan']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-04-11T04:20:00.265514" elapsed="0.289321"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-11T04:20:00.555385" level="INFO">Typing text 'Your Awesome Slogan' into text field 'xpath=//input[@name='slogan']'.</msg>
+<arg>xpath=//input[@name='slogan']</arg>
+<arg>${slogan}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-11T04:20:00.555385" elapsed="0.168700"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-11T04:20:01.225460" level="INFO">Slept 500 milliseconds.</msg>
+<arg>0.5s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-11T04:20:00.725082" elapsed="0.500378"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath=//button[contains(text(), 'Continue')]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-04-11T04:20:01.225460" elapsed="0.295707"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-04-11T04:20:01.521452" level="INFO">Clicking button 'xpath=//button[contains(text(), 'Continue')]'.</msg>
+<arg>xpath=//button[contains(text(), 'Continue')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-11T04:20:01.521452" elapsed="0.117793"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-11T04:20:04.645383" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-11T04:20:01.645251" elapsed="3.000132"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath=//input[@name='full_name']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-04-11T04:20:04.645383" elapsed="0.293950"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-11T04:20:04.940328" level="INFO">Typing text 'Tanvi Arabekar' into text field 'xpath=//input[@name='full_name']'.</msg>
+<arg>xpath=//input[@name='full_name']</arg>
+<arg>${full_name}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-11T04:20:04.939333" elapsed="0.178488"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-11T04:20:05.120816" level="INFO">Typing text 'tanishkaarabekar25@gmail.com' into text field 'xpath=//input[@name='email']'.</msg>
+<arg>xpath=//input[@name='email']</arg>
+<arg>${email}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-11T04:20:05.119818" elapsed="0.291365"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-11T04:20:06.411567" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-11T04:20:05.411183" elapsed="1.000384"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath=//button[contains(text(), 'Continue')]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-04-11T04:20:06.412071" elapsed="0.290085"/>
+</kw>
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-04-11T04:20:06.702156" level="INFO">Clicking button 'xpath=//button[contains(text(), 'Continue')]'.</msg>
+<arg>xpath=//button[contains(text(), 'Continue')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-11T04:20:06.702156" elapsed="0.217491"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-11T04:20:09.921087" level="INFO">Slept 3 seconds.</msg>
+<arg>3s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-11T04:20:06.919647" elapsed="3.001724"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n👉 Waiting for 'Continue Process' button on Step 3...\n</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-11T04:20:09.921778" elapsed="0.000884"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//button[contains(text(), 'Continue Process')]</arg>
+<arg>30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-11T04:20:09.922662" elapsed="0.015748"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>xpath=//button[contains(text(), 'Continue Process')]</arg>
+<arg>15s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-04-11T04:20:09.938410" elapsed="0.016093"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath=//button[contains(text(), 'Continue Process')]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-04-11T04:20:09.954503" elapsed="0.267635"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-11T04:20:11.222925" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-11T04:20:10.222138" elapsed="1.000787"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-04-11T04:20:11.222925" level="INFO">Clicking button 'xpath=//button[contains(text(), 'Continue Process')]'.</msg>
+<arg>xpath=//button[contains(text(), 'Continue Process')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-11T04:20:11.222925" elapsed="0.114119"/>
+</kw>
+<arg>Click Button</arg>
+<arg>xpath=//button[contains(text(), 'Continue Process')]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2025-04-11T04:20:11.222925" elapsed="0.114119"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-11T04:20:13.337248" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-11T04:20:11.337044" elapsed="2.000204"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-04-11T04:20:13.339417" level="INFO">Executing JavaScript:
+arguments[0].click();xpath=//button[contains(text(), 'Continue Process')]
+Without any arguments.</msg>
+<msg time="2025-04-11T04:20:13.573103" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-119.png"&gt;&lt;img src="selenium-screenshot-119.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-04-11T04:20:13.573103" level="FAIL">JavascriptException: Message: javascript error: Unexpected token '}'
+  (Session info: chrome=135.0.7049.85)
+Stacktrace:
+	GetHandleVerifier [0x011C80E3+60707]
+	GetHandleVerifier [0x011C8124+60772]
+	(No symbol) [0x00FF0683]
+	(No symbol) [0x00FF6DE7]
+	(No symbol) [0x00FF9345]
+	(No symbol) [0x0107F741]
+	(No symbol) [0x0105D04C]
+	(No symbol) [0x0107E824]
+	(No symbol) [0x0105CE46]
+	(No symbol) [0x0102C5D3]
+	(No symbol) [0x0102D424]
+	GetHandleVerifier [0x0140BBC3+2435075]
+	GetHandleVerifier [0x01407163+2416035]
+	GetHandleVerifier [0x0142350C+2531660]
+	GetHandleVerifier [0x011DF1B5+155125]
+	GetHandleVerifier [0x011E5B5D+182173]
+	GetHandleVerifier [0x011CF9B8+91640]
+	GetHandleVerifier [0x011CFB60+92064]
+	GetHandleVerifier [0x011BA620+4704]
+	BaseThreadInitThunk [0x74DE7BA9+25]
+	RtlInitializeExceptionChain [0x7731C2EB+107]
+	RtlClearBits [0x7731C26F+191]
+</msg>
+<arg>arguments[0].click();</arg>
+<arg>xpath=//button[contains(text(), 'Continue Process')]</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="FAIL" start="2025-04-11T04:20:13.338660" elapsed="0.234443">JavascriptException: Message: javascript error: Unexpected token '}'
+  (Session info: chrome=135.0.7049.85)
+Stacktrace:
+	GetHandleVerifier [0x011C80E3+60707]
+	GetHandleVerifier [0x011C8124+60772]
+	(No symbol) [0x00FF0683]
+	(No symbol) [0x00FF6DE7]
+	(No symbol) [0x00FF9345]
+	(No symbol) [0x0107F741]
+	(No symbol) [0x0105D04C]
+	(No symbol) [0x0107E824]
+	(No symbol) [0x0105CE46]
+	(No symbol) [0x0102C5D3]
+	(No symbol) [0x0102D424]
+	GetHandleVerifier [0x0140BBC3+2435075]
+	GetHandleVerifier [0x01407163+2416035]
+	GetHandleVerifier [0x0142350C+2531660]
+	GetHandleVerifier [0x011DF1B5+155125]
+	GetHandleVerifier [0x011E5B5D+182173]
+	GetHandleVerifier [0x011CF9B8+91640]
+	GetHandleVerifier [0x011CFB60+92064]
+	GetHandleVerifier [0x011BA620+4704]
+	BaseThreadInitThunk [0x74DE7BA9+25]
+	RtlInitializeExceptionChain [0x7731C2EB+107]
+	RtlClearBits [0x7731C26F+191]
+</status>
+</kw>
+<arg>Execute JavaScript</arg>
+<arg>arguments[0].click();</arg>
+<arg>xpath=//button[contains(text(), 'Continue Process')]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2025-04-11T04:20:13.338272" elapsed="0.234831"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-11T04:20:15.573453" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-11T04:20:13.573103" elapsed="2.001356"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n✅ Step 3 completed: Proceeded to Step 4\n</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-11T04:20:15.575456" elapsed="0.001994"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-11T04:20:17.578622" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-11T04:20:15.577450" elapsed="2.001172"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n👉 Waiting for 'Continue Process' button on Step 3...\n</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-11T04:20:17.578622" elapsed="0.000773"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//button[contains(text(), 'Continue Process')]</arg>
+<arg>30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-11T04:20:17.579395" elapsed="0.011709"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>xpath=//button[contains(text(), 'Continue Process')]</arg>
+<arg>15s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-04-11T04:20:17.591445" elapsed="0.010975"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath=//button[contains(text(), 'Continue Process')]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-04-11T04:20:17.603256" elapsed="0.270855"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-11T04:20:18.875286" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-11T04:20:17.875108" elapsed="1.000178"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-04-11T04:20:18.876329" level="INFO">Clicking button 'xpath=//button[contains(text(), 'Continue Process')]'.</msg>
+<arg>xpath=//button[contains(text(), 'Continue Process')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-11T04:20:18.876329" elapsed="0.093405"/>
+</kw>
+<arg>Click Button</arg>
+<arg>xpath=//button[contains(text(), 'Continue Process')]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2025-04-11T04:20:18.875286" elapsed="0.094448"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-11T04:20:20.971322" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-11T04:20:18.969734" elapsed="2.001588"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-04-11T04:20:20.972321" level="INFO">Executing JavaScript:
+arguments[0].click();xpath=//button[contains(text(), 'Continue Process')]
+Without any arguments.</msg>
+<msg time="2025-04-11T04:20:21.269515" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-120.png"&gt;&lt;img src="selenium-screenshot-120.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-04-11T04:20:21.270534" level="FAIL">JavascriptException: Message: javascript error: Unexpected token '}'
+  (Session info: chrome=135.0.7049.85)
+Stacktrace:
+	GetHandleVerifier [0x011C80E3+60707]
+	GetHandleVerifier [0x011C8124+60772]
+	(No symbol) [0x00FF0683]
+	(No symbol) [0x00FF6DE7]
+	(No symbol) [0x00FF9345]
+	(No symbol) [0x0107F741]
+	(No symbol) [0x0105D04C]
+	(No symbol) [0x0107E824]
+	(No symbol) [0x0105CE46]
+	(No symbol) [0x0102C5D3]
+	(No symbol) [0x0102D424]
+	GetHandleVerifier [0x0140BBC3+2435075]
+	GetHandleVerifier [0x01407163+2416035]
+	GetHandleVerifier [0x0142350C+2531660]
+	GetHandleVerifier [0x011DF1B5+155125]
+	GetHandleVerifier [0x011E5B5D+182173]
+	GetHandleVerifier [0x011CF9B8+91640]
+	GetHandleVerifier [0x011CFB60+92064]
+	GetHandleVerifier [0x011BA620+4704]
+	BaseThreadInitThunk [0x74DE7BA9+25]
+	RtlInitializeExceptionChain [0x7731C2EB+107]
+	RtlClearBits [0x7731C26F+191]
+</msg>
+<arg>arguments[0].click();</arg>
+<arg>xpath=//button[contains(text(), 'Continue Process')]</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="FAIL" start="2025-04-11T04:20:20.971322" elapsed="0.300210">JavascriptException: Message: javascript error: Unexpected token '}'
+  (Session info: chrome=135.0.7049.85)
+Stacktrace:
+	GetHandleVerifier [0x011C80E3+60707]
+	GetHandleVerifier [0x011C8124+60772]
+	(No symbol) [0x00FF0683]
+	(No symbol) [0x00FF6DE7]
+	(No symbol) [0x00FF9345]
+	(No symbol) [0x0107F741]
+	(No symbol) [0x0105D04C]
+	(No symbol) [0x0107E824]
+	(No symbol) [0x0105CE46]
+	(No symbol) [0x0102C5D3]
+	(No symbol) [0x0102D424]
+	GetHandleVerifier [0x0140BBC3+2435075]
+	GetHandleVerifier [0x01407163+2416035]
+	GetHandleVerifier [0x0142350C+2531660]
+	GetHandleVerifier [0x011DF1B5+155125]
+	GetHandleVerifier [0x011E5B5D+182173]
+	GetHandleVerifier [0x011CF9B8+91640]
+	GetHandleVerifier [0x011CFB60+92064]
+	GetHandleVerifier [0x011BA620+4704]
+	BaseThreadInitThunk [0x74DE7BA9+25]
+	RtlInitializeExceptionChain [0x7731C2EB+107]
+	RtlClearBits [0x7731C26F+191]
+</status>
+</kw>
+<arg>Execute JavaScript</arg>
+<arg>arguments[0].click();</arg>
+<arg>xpath=//button[contains(text(), 'Continue Process')]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2025-04-11T04:20:20.971322" elapsed="0.300210"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-11T04:20:23.271856" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-11T04:20:21.271532" elapsed="2.000324"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n✅ Step 5 completed: Proceeded to Step 4\n</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-11T04:20:23.271856" elapsed="0.000536"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-11T04:20:25.272730" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-11T04:20:23.272392" elapsed="2.000338"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//input[@placeholder="Search for a country"]</arg>
+<arg>15s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-11T04:20:25.273117" elapsed="0.016162"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2025-04-11T04:20:25.289279" level="INFO">Typing text 'India' into text field 'xpath=//input[@placeholder="Search for a country"]'.</msg>
+<arg>xpath=//input[@placeholder="Search for a country"]</arg>
+<arg>${country}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-11T04:20:25.289279" elapsed="0.059312"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-11T04:20:26.348919" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-11T04:20:25.348591" elapsed="1.000328"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//h2[text()='India']/ancestor::div[contains(@class, 'cursor-pointer')]//input[@type='checkbox']</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-11T04:20:26.350220" elapsed="0.038731"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2025-04-11T04:20:26.389943" level="INFO">Clicking element 'xpath=//h2[text()='India']/ancestor::div[contains(@class, 'cursor-pointer')]//input[@type='checkbox']'.</msg>
+<arg>xpath=//h2[text()='India']/ancestor::div[contains(@class, 'cursor-pointer')]//input[@type='checkbox']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-11T04:20:26.388951" elapsed="0.053025"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-11T04:20:27.442506" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-11T04:20:26.441976" elapsed="1.000530"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n✅ Country 'India' checkbox successfully selected!\n</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-11T04:20:27.443337" elapsed="0.002058"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-11T04:20:28.446923" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-11T04:20:27.446360" elapsed="1.000563"/>
+</kw>
+<kw name="Log To Console" owner="BuiltIn">
+<arg>\n👉 Waiting for 'Continue Process' button on Step 3...\n</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" start="2025-04-11T04:20:28.446923" elapsed="0.000000"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>xpath=//button[contains(text(), 'Continue Process')]</arg>
+<arg>30s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2025-04-11T04:20:28.448321" elapsed="0.024317"/>
+</kw>
+<kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
+<arg>xpath=//button[contains(text(), 'Continue Process')]</arg>
+<arg>15s</arg>
+<doc>Waits until the element ``locator`` is enabled.</doc>
+<status status="PASS" start="2025-04-11T04:20:28.472638" elapsed="0.011936"/>
+</kw>
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath=//button[contains(text(), 'Continue Process')]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2025-04-11T04:20:28.484574" elapsed="0.285293"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-11T04:20:29.771712" level="INFO">Slept 1 second.</msg>
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-11T04:20:28.770933" elapsed="1.000779"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2025-04-11T04:20:29.773752" level="INFO">Clicking button 'xpath=//button[contains(text(), 'Continue Process')]'.</msg>
+<arg>xpath=//button[contains(text(), 'Continue Process')]</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2025-04-11T04:20:29.773752" elapsed="0.097544"/>
+</kw>
+<arg>Click Button</arg>
+<arg>xpath=//button[contains(text(), 'Continue Process')]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2025-04-11T04:20:29.772724" elapsed="0.098572"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-11T04:20:31.872625" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-11T04:20:29.872297" elapsed="2.000328"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" owner="BuiltIn">
+<kw name="Execute Javascript" owner="SeleniumLibrary">
+<msg time="2025-04-11T04:20:31.876110" level="INFO">Executing JavaScript:
+arguments[0].click();xpath=//button[contains(text(), 'Continue Process')]
+Without any arguments.</msg>
+<msg time="2025-04-11T04:20:32.041335" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-121.png"&gt;&lt;img src="selenium-screenshot-121.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-04-11T04:20:32.041335" level="FAIL">JavascriptException: Message: javascript error: Unexpected token '}'
+  (Session info: chrome=135.0.7049.85)
+Stacktrace:
+	GetHandleVerifier [0x011C80E3+60707]
+	GetHandleVerifier [0x011C8124+60772]
+	(No symbol) [0x00FF0683]
+	(No symbol) [0x00FF6DE7]
+	(No symbol) [0x00FF9345]
+	(No symbol) [0x0107F741]
+	(No symbol) [0x0105D04C]
+	(No symbol) [0x0107E824]
+	(No symbol) [0x0105CE46]
+	(No symbol) [0x0102C5D3]
+	(No symbol) [0x0102D424]
+	GetHandleVerifier [0x0140BBC3+2435075]
+	GetHandleVerifier [0x01407163+2416035]
+	GetHandleVerifier [0x0142350C+2531660]
+	GetHandleVerifier [0x011DF1B5+155125]
+	GetHandleVerifier [0x011E5B5D+182173]
+	GetHandleVerifier [0x011CF9B8+91640]
+	GetHandleVerifier [0x011CFB60+92064]
+	GetHandleVerifier [0x011BA620+4704]
+	BaseThreadInitThunk [0x74DE7BA9+25]
+	RtlInitializeExceptionChain [0x7731C2EB+107]
+	RtlClearBits [0x7731C26F+191]
+</msg>
+<arg>arguments[0].click();</arg>
+<arg>xpath=//button[contains(text(), 'Continue Process')]</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="FAIL" start="2025-04-11T04:20:31.875114" elapsed="0.166221">JavascriptException: Message: javascript error: Unexpected token '}'
+  (Session info: chrome=135.0.7049.85)
+Stacktrace:
+	GetHandleVerifier [0x011C80E3+60707]
+	GetHandleVerifier [0x011C8124+60772]
+	(No symbol) [0x00FF0683]
+	(No symbol) [0x00FF6DE7]
+	(No symbol) [0x00FF9345]
+	(No symbol) [0x0107F741]
+	(No symbol) [0x0105D04C]
+	(No symbol) [0x0107E824]
+	(No symbol) [0x0105CE46]
+	(No symbol) [0x0102C5D3]
+	(No symbol) [0x0102D424]
+	GetHandleVerifier [0x0140BBC3+2435075]
+	GetHandleVerifier [0x01407163+2416035]
+	GetHandleVerifier [0x0142350C+2531660]
+	GetHandleVerifier [0x011DF1B5+155125]
+	GetHandleVerifier [0x011E5B5D+182173]
+	GetHandleVerifier [0x011CF9B8+91640]
+	GetHandleVerifier [0x011CFB60+92064]
+	GetHandleVerifier [0x011BA620+4704]
+	BaseThreadInitThunk [0x74DE7BA9+25]
+	RtlInitializeExceptionChain [0x7731C2EB+107]
+	RtlClearBits [0x7731C26F+191]
+</status>
+</kw>
+<arg>Execute JavaScript</arg>
+<arg>arguments[0].click();</arg>
+<arg>xpath=//button[contains(text(), 'Continue Process')]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<status status="PASS" start="2025-04-11T04:20:31.874104" elapsed="0.168228"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2025-04-11T04:20:34.042835" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2025-04-11T04:20:32.042485" elapsed="2.000350"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-04-11T04:20:34.043925" elapsed="0.568055"/>
+</kw>
+<status status="PASS" start="2025-04-11T04:19:40.656634" elapsed="53.955346"/>
+</test>
+<status status="PASS" start="2025-04-11T04:19:39.859907" elapsed="54.752073"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Tc6" id="s1" pass="1" fail="0" skip="0">Tc6</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
