@@ -26,10 +26,9 @@ jobs:
           pip install robotframework-browser
           rfbrowser init
 
-     - name: Run Robot Tests (Allow Failure)
-       run: |
-        robot . || true
-
+      - name: Run Robot Tests (Allow Failure)
+        run: |
+          robot . || true
 
       - name: Upload Robot Results
         uses: actions/upload-artifact@v4
@@ -39,3 +38,5 @@ jobs:
             log.html
             report.html
             output.xml
+
+        
