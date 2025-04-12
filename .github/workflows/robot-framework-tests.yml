@@ -28,7 +28,7 @@ jobs:
 
       - name: Run Robot Tests
         run: |
-          robot tests/
+          robot tests/  # Ensure tests are running and output files are generated
 
       - name: Upload Robot Results
         uses: actions/upload-artifact@v3
@@ -50,10 +50,10 @@ jobs:
       - name: Download Robot Results
         uses: actions/download-artifact@v3
         with:
-          name: robot-report  # Same artifact name used in the upload step
-          path: ./downloads  # Destination folder for downloaded artifacts
+          name: robot-report  # Same name used in the upload step
+          path: ./downloads  # Folder where the artifact will be downloaded
 
       - name: Display downloaded files
         run: |
           echo "Downloaded files:"
-          ls ./downloads  # Lists the downloaded files to verify
+          ls ./downloads  # Verify the downloaded files
