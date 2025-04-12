@@ -33,7 +33,7 @@ jobs:
       - name: Upload Robot Results
         uses: actions/upload-artifact@v3
         with:
-          name: robot-report  # Artifact name
+          name: robot-report  # Artifact name (This name must match the one in download step)
           path: |
             log.html
             report.html
@@ -41,7 +41,7 @@ jobs:
 
   download:
     runs-on: ubuntu-latest
-    needs: test  # Ensures this job runs after the 'test' job
+    needs: test  # This ensures the `download` job runs after the `test` job completes
 
     steps:
       - name: Checkout repository
@@ -56,4 +56,4 @@ jobs:
       - name: Display downloaded files
         run: |
           echo "Downloaded files:"
-          ls ./downloads  # Verify the downloaded files
+          ls ./downloads  # List the downloaded files to verify
