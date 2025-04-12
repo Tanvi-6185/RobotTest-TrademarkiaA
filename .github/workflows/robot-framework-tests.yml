@@ -28,7 +28,7 @@ jobs:
 
       - name: Run Robot Tests
         run: |
-          robot tests/
+          robot .
 
       - name: Upload Robot Results
         uses: actions/upload-artifact@v4
@@ -38,22 +38,3 @@ jobs:
             log.html
             report.html
             output.xml
-
-  download:
-    runs-on: ubuntu-latest
-    needs: test
-
-    steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
-      - name: Download Robot Results
-        uses: actions/download-artifact@v4
-        with:
-          name: robot-report
-          path: ./downloads
-
-      - name: Display downloaded files
-        run: |
-          echo "Downloaded files:"
-          ls ./downloads
