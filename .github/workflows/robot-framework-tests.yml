@@ -33,7 +33,7 @@ jobs:
       - name: Upload Robot Results
         uses: actions/upload-artifact@v3
         with:
-          name: robot-report
+          name: robot-report  # Artifact name
           path: |
             log.html
             report.html
@@ -50,10 +50,10 @@ jobs:
       - name: Download Robot Results
         uses: actions/download-artifact@v3
         with:
-          name: robot-report
-          path: ./downloads
+          name: robot-report  # Same artifact name used in the upload step
+          path: ./downloads  # Destination folder for downloaded artifacts
 
       - name: Display downloaded files
         run: |
           echo "Downloaded files:"
-          ls ./downloads
+          ls ./downloads  # Lists the downloaded files to verify
